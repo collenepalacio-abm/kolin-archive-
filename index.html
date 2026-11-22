@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Princess Collene C. Palacio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f8f0fc 0%, #e9d5f5 100%);
+            min-height: 100vh;
+            color: #4a266a;
+            line-height: 1.8;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background: rgba(128, 73, 179, 0.95);
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 20px rgba(106, 49, 154, 0.2);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateY(-2px);
+        }
+
+        /* Section Styling */
+        section {
+            padding: 100px 5% 60px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #7b2cb3;
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #8838c0;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #d4b3f2;
+            display: inline-block;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #9156c2;
+            font-size: 1.1rem;
+            margin-bottom: 3rem;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 20px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 30px rgba(123, 44, 179, 0.12);
+            border-left: 5px solid #b888e8;
+        }
+
+        .poem {
+            font-style: italic;
+            line-height: 2;
+            background: #f9f4fc;
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 1.5rem 0;
+        }
+
+        .contacts p {
+            margin: 0.8rem 0;
+            font-size: 1.05rem;
+        }
+
+        a {
+            color: #8838c0;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #b888e8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #9156c2;
+            font-size: 0.95rem;
+        }
+
+        /* Home section */
+        #home {
+            text-align: center;
+            padding-top: 150px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .heart {
+            color: #d896f0;
+            font-size: 2rem;
+            margin: 1rem 0;
+        }
+
+        /* Photo Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(123, 44, 179, 0.15);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.03);
+        }
+
+        .photo-note {
+            text-align: center;
+            color: #9156c2;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#interests">Interests</a></li>
+            <li><a href="#home-section">My Home</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#achievements">Memories</a></li>
+            <li><a href="#future">My Future</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1>💜 Princess Collene C. Palacio 💜</h1>
+        <p class="subtitle">Grade 12 ABM Student · Datamex College of Saint Adeline</p>
+        <div class="heart">💞🫶🏻</div>
+        <p style="font-size: 1.2rem; color: #7b2cb3;">Building my dreams, one step at a time ✨</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>🌸 About Me</h2>
+        <div class="card">
+            <p>Hello, everyone! I'm <strong>Princess Collene C. Palacio</strong>, and I'm currently a Grade 12 student taking the <em>Accountancy, Business, and Management</em> strand at Datamex College.</p>
+            <br>
+            <p>Welcome to my little corner of the internet — where I share who I am, what I love, and the dreams I'm working toward! ✨</p>
+        </div>
+    </section>
+
+    <!-- My Interests -->
+    <section id="interests">
+        <h2>💜 My Interests</h2>
+        <div class="card">
+            <p>Purple has always been my favorite color — it feels calm, elegant, and simply beautiful to me. 💜</p>
+            <br>
+            <p>Just a little fun fact about myself: I'm actually allergic to seafood, so I usually skip on those! 😊</p>
+            <br>
+            <p>In my free time, I enjoy:</p>
+            <ul style="margin: 1rem 2rem;">
+                <li>🎲 Playing board games — they're fun and a great way to bond with people</li>
+                <li>😴 Sleeping — my favorite way to recharge</li>
+                <li>🎬 Watching movies — they let me explore different stories and worlds</li>
+            </ul>
+            <br>
+            <p>Above all, I have big dreams: I want to make my family proud, finish my college education no matter what, and eventually land a stable job that will help me build a good life and give back to the people I love the most. ✨</p>
+        </div>
+    </section>
+
+    <!-- My Home -->
+    <section id="home-section">
+        <h2>🏡 My Home & Moments</h2>
+        <div class="card" style="text-align: center; font-size: 1.3rem;">
+            <p>💞🫶🏻</p>
+            <p>✨</p>
+            <p>10/10! 🥩🥢</p>
+            <p>with buddies 🤟🏻</p>
+        </div>
+    </section>
+
+    <!-- Works -->
+    <section id="works">
+        <h2>📝 My Works</h2>
+        
+        <div class="card">
+            <h3>🌸 Poem: My Story, My Voice</h3>
+            <div class="poem">
+                I used to wonder where my place would be,<br>
+                What life would hold, what I would come to see.<br>
+                I looked around and wondered if I'd find<br>
+                A path that felt like it was truly mine.<br>
+                <br>
+                But then I learned that every road starts small,<br>
+                That I am the one who answers to the call.<br>
+                No one can walk this journey in my stead —<br>
+                The pen is in my hand, the choice is mine to read.<br>
+                <br>
+                There will be days when doubt may find its way,<br>
+                When shadows fall and skies turn into gray.<br>
+                But I will rise, I'll take another step,<br>
+                For I am the one who shapes my own depth.<br>
+                <br>
+                I may not know exactly where I'll go,<br>
+                Or how the stories of my life will grow,<br>
+                But this I know — whatever I may be,<br>
+                My story begins and belongs to me.
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>✨ Short Story: The Start That Found Its Way</h3>
+            <p>Lila loved stargazing. Every night she'd sit by her window and watch the sky, wondering what it would be like to reach one of those little twinkling lights. But she always felt small — like she was just one person on a big planet with no special purpose at all.</p>
+            <br>
+            <p>One cloudy night, the sky went dark. No stars shone through. Lila felt lonely. She lit a candle and set it on her windowsill just to have a little light of her own.</p>
+            <br>
+            <p>As she sat there, a soft glow caught her eye — not from above, but from the garden below. There, a single firefly danced in the shadows, bright and steady even though the moon was hidden away.</p>
+            <br>
+            <p>Lila smiled. "You don't need the stars to shine," she whispered to herself.</p>
+            <br>
+            <p>From that night on she realized something important: <em>You don't have to be big or famous to make a difference. Sometimes all it takes is one small light burning bright right where you stand.</em> And that was enough. 💛</p>
+        </div>
+    </section>
+
+    <!-- Achievements & Memories -->
+    <section id="achievements">
+        <h2>📸 Achievements & Memories</h2>
+        <div class="card">
+            <p>Back in JHS, I joined every school activity and actually got good grades for it too. Weekends meant hanging out at cafes or a quick trip to Boracay with my friends whenever we were free. Miss this so much! 💞</p>
+        </div>
+
+        <div class="card">
+            <h3>🖼️ Photo Gallery</h3>
+            <p style="margin-bottom: 1rem;">A collection of my favorite moments and milestones ✨</p>
+            <div class="gallery">
+                <!-- Replace these placeholder links with your actual image URLs -->
+                <div>
+                    <img src="photo1.jpg" alt="Samgyup with friends">
+                    <p class="photo-note">Good food, better friends 🥩</p>
+                </div>
+                <div>
+                    <img src="photo2.jpg" alt="Celebration at Greenwich">
+                    <p class="photo-note">Celebrations with loved ones 🎂</p>
+                </div>
+                <div>
+                    <img src="photo3.jpg" alt="Selfie">
+                    <p class="photo-note">✨</p>
+                </div>
+                <div>
+                    <img src="photo4.jpg" alt="Road trip with friends">
+                    <p class="photo-note">Adventures with buddies 🚗</p>
+                </div>
+                <div>
+                    <img src="photo5.jpg" alt="Family gathering">
+                    <p class="photo-note">Family time ❤️</p>
+                </div>
+                <div>
+                    <img src="photo6.jpg" alt="Recognition Day">
+                    <p class="photo-note">Recognition Day 🎓</p>
+                </div>
+                <div>
+                    <img src="photo7.jpg" alt="Girl Scouting activity">
+                    <p class="photo-note">Girl Scouting Camp 🏕️</p>
+                </div>
+                <div>
+                    <img src="photo8.jpg" alt="Moving Up Ceremony">
+                    <p class="photo-note">JHS Moving Up 🎓💐</p>
+                </div>
+                <div>
+                    <img src="photo9.jpg" alt="Mirror selfie with friends">
+                    <p class="photo-note">Besties moments 🤳</p>
+                </div>
+            </div>
+            <p style="margin-top: 1rem; font-size: 0.9rem; color: #9156c2;"><em>📌 Tip: Save your photos in the same folder as this file and rename them photo1.jpg, photo2.jpg, etc. to display them!</em></p>
+        </div>
+    </section>
+
+    <!-- My Future -->
+    <section id="future">
+        <h2>💫 My Future</h2>
+        <div class="card">
+            <p>Ever since I started dreaming about my future, one goal has always stayed the same: to build a steady, meaningful career that will give me the stability I hope for.</p>
+            <br>
+            <p>I want a stable job not just for myself, but so I can finally provide for my family and give back everything they've done for me — every sacrifice, every effort, and all the love they've poured into raising me. They've given me so much without asking for anything in return, and I hope that one day I can be the one to take care of them, just like they've always taken care of me.</p>
+            <br>
+            <p>More than anything, I want to make them proud — to show that all their hard work and belief in me was worth it, and that their love is what will always keep me going. ✨</p>
+        </div>
+    </section>
+
+    <!-- Contacts -->
+    <section id="contacts" class="contacts">
+        <h2>💌 Contact Me</h2>
+        <div class="card">
+            <p>📍 512 Agripina St., Aurenina Village, Parañaque City</p>
+            <p>📱 0991-305-0996</p>
+            <p>📸 Instagram: <a href="https://instagram.com/cllynxs" target="_blank">cllynxs</a></p>
+            <p>📘 Facebook: Collene Palacio</p>
+            <p>🎵 TikTok: cxlenzys</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>💜 2026 Princess Collene C. Palacio · Made with love 💜</p>
+    </footer>
+
+</body>
+</html>
